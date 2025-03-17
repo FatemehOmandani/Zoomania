@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Zoomania</title>
+</head>
+<body>
+    
+    <div class="top_bar">
+        <nav>
+            <ul>
+                <li>
+                    <input type="search" id="searchInput" placeholder="  Search">
+                </li>
+
+                <li><a href="#Logi_Registrieren">Login/Register</a></li>
+                <li><a href="#Spende">Donate</a></li>
+                <li><a href="#Freiwilligenarbeit">Volunteering</a></li>
+                <li class="language-dropdown">
+                    <button class="language-button">
+                        <img src="pics/Flags/Flag_of_the_United_Kingdom.png" alt="English"> EN
+                        <img id="arrow" src="pics/icons/arrow_down.png" alt="arrow">
+                    </button>
+                    <ul class="language-menu">
+                        <li><a id="german" href="index-german.html" data-lang="de"><img src="pics/Flags/Flag_of_Germany.png" alt="Deutsch"> Deutsch</a></li>
+                        <li><a id="englisch" href="index-englisch.html" data-lang="en"><img src="pics/Flags/Flag_of_the_United_Kingdom.png" alt="Englisch"> English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <div id="content">
+         <nav class="main_nav">
+            <ul>
+                <li><a href="index-englisch.html"> 
+                    <img id="logo-top" src="pics/logos/logo_top.svg" alt="Logo">  
+                  </a></li>
+                <li><a href="#kalender">Calendar</a></li>
+                <li><a class="nav-dropdown" href="#besuchen">Visit</a>
+                    <ul>
+                        <li><a href="#ticket-kaufen">Buy Ticket</a></li>
+                        <li><a href="#exkursion">Excursion</a></li>
+                        <li><a href="#geburtstagsparty-buchen">Book Birthday Party</a></li>
+                    </ul>
+                </li> 
+                <li><a class="nav-dropdown" href="#ueber-uns">About Us</a>
+                    <ul>
+                        <li><a href="#unsere-geschichte">Our Story</a></li>
+                        <li><a href="#philosopie">Philosophy</a></li>
+                        <li><a href="#kontakt">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="#mitgliedschaft">Membership</a></li>
+            </ul>
+        </nav>
+        <div id="scroll-progress"></div>
+    </header>
+
+    <main id="main-content">
+        <div class="circle_container">
+            <img id="header-img" src="pics/header-light.svg" alt="">
+            <p>Zoomania</p>
+            <div class="circle" id="orange_circle"></div>
+            <div class="circle" id="green_circle"></div>
+            <div class="circle" id="blue_circle"></div>
+            <div class="circle" id="pink_circle"></div>
+            <div class="circle" id="green_left_circle"></div>
+            <div class="circle" id="red_circle"></div>
+        </div>
+        
+        <article id="willkommen_bei_zoomania">
+            <div id="welcome">
+                
+            <h2>Welcome to Zoomania,</h2>
+            <p>Your interactive animal museum for the whole family! <br>
+            Dive into the fascinating world of animals, solve exciting puzzles, 
+            listen to thrilling stories, and explore our 3D gallery or the virtual museum.
+            Plan your next visit, become a member, and experience unforgettable adventures – online and on-site.
+            </p>
+        </div>
+        <div id="today">
+            <p>Today</p>
+            <p id="date"></p>
+            <p id="Experimentier-Labor">Experiment Lab</p>
+            <p>4:00 PM to 6:00 PM</p>
+        </div>
+        </article>
+
+        <article id="virtuelles_museum">
+            <div id="virtuell">
+            <h2>Virtual Museum</h2>
+            <h3>Become an Animal Researcher!</h3>
+            <p>Are you ready for an adventure? In our virtual museum, you can discover the exciting world of animals without leaving your home! <br></p>
+                <p>Meet exciting animals: Encounter lions, penguins, and even dinosaurs in 3D!</p> <br>  
+                <p>Solve puzzles: Find hidden treasures and help animals in tricky missions.</p> <br>
+               <p>Explore secret places: Travel through jungles, deserts, and seas – all with a click!</p>
+            <button id="vertuelles_museum_button">Discover the Virtual Museum</button> 
+        </div>  
+       <div><img src="pics/mainPage/virtuel.jpg" alt=""></div> 
+        </article>
+
+        <article id="blog">
+            <h3>What's New?</h3>
+            <button id="blog-button">To the Blog</button>
+            <div class="bilder-container">
+                <div class="bilder-box">
+                    <img src="pics/mainPage/weltkarte2.png" alt="">
+                    <h4 class="bilder-titel">Animals from Around the World in Our Museum!</h4>
+                    <p>Visitors can now experience fascinating animals from the most remote corners of the Earth up close. 
+                         Discover new interactive stations specially designed for young researchers.</p>
+                </div>
+            
+                <div class="bilder-box">
+                    <img src="pics/mainPage/giganten2.png" alt="">
+                    <h4 class="bilder-titel">From Mini Insects to Giants: Animal Sizes in Comparison</h4>
+                    <p>Learn about the differences in size among animals – from tiny ants to gigantic elephants – and how they adapt skillfully to their environment.</p>
+                </div>
+            
+                <div class="bilder-box">
+                    <img src="pics/mainPage/workshop2.png" alt="Description of Image 3">
+                    <h4 class="bilder-titel">Workshops and Activities in the Museum</h4>
+                    <p>This week, new workshops start, in which children can playfully learn more about the animal world – 
+                         from painting animal tracks to crafting animal masks.</p> 
+                </div>
+            </div>
+        </article>
+
+       
+        <article id="Tagesprogramm">
+            <h2 id="Tagesprogramm-titel">Daily Program at Zoomania</h2>
+    
+            <p id="tagesprogramm-text"> </p>
+
+            <p>In the table below, you will see the planned activities,
+                 their time, location, and the recommended age group.
+                  This way, you can optimally plan your visit and not miss any highlights!</p>
+                
+                   <table id="tagesprogramm-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Location</th>
+                            <th>Age Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10:30</td>
+                            <td>Interactive Animal Feeding</td>
+                            <td>Farm Area</td>
+                            <td>From 3 years</td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>Children's Quiz with Prizes</td>
+                            <td>Main Stage</td>
+                            <td>5 - 12 years</td>
+                        </tr>
+                        <tr>
+                            <td>1:30 PM</td>
+                            <td>Craft Workshop "Animal Masks"</td>
+                            <td>Creative Room</td>
+                            <td>4 - 10 years</td>
+                        </tr>
+                        <tr>
+                            <td>3:00 PM</td>
+                            <td>Virtual Safari Tour</td>
+                            <td>VR Experience Room</td>
+                            <td>From 6 years</td>
+                        </tr>
+                        <tr>
+                            <td>4:30 PM</td>
+                            <td>Story Time "Jungle Adventure"</td>
+                            <td>Reading Corner</td>
+                            <td>All Age Groups</td>
+                        </tr>
+                    </tbody>
+                </table>
+                        <p class="highlight"><b>Would you like to see more dates or reserve a spot directly?</b></p>
+                        <button id="Kalender_zeigen">Show Complete Calendar & Book</button>
+        </article>
+
+       
+            <div class="zitat_container">
+            <img id="quote-image" src="pics/quote.svg" alt="">
+            <div class="quote">
+            <p>„Every day is a new beginning, and children are the true explorers. They see the world with eyes of curiosity and wonder that we adults have often lost. They are not only capable of learning new things but also of experiencing the world again with a fresh perspective.“ <br>
+                <br>- Maria Montessori </p>
+                </div>
+            </div>
+
+            <div class="feedback-container">
+                <h3>Zoomania in the Feedback Check</h3>
+            
+                <div class="feedback-wrapper">
+                    <button class="feedback-btn left" id="prev-button"><img id="left-img" src="pics/icons/left.svg" alt=""></button>
+                    
+                    <div class="feedback">
+                        <div class="bubble">
+                            <p class="feedback-quote" id="feedback-text">
+                                „The combination of learning and fun is simply great. Our daughter didn't want to go home! 
+                                The organization was excellent, and the staff was very friendly.“
+                            </p>
+                        </div>
+            
+                        <div class="feedback-user">
+                            <img class="feedback-profile-foto" id="feedback-img" src="pics/mainPage/persona-Anna.jpg" alt="Anna M.">
+                            <div class="user-info">
+                                <p class="feedback-name" id="feedback-name">Anna M.</p>
+                                <p class="feedback-date" id="feedback-date">12.15.2024</p>
+                            </div>
+                            <div class="feedback-stars" id="feedback-stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <button class="feedback-btn right" id="next-button"><img id="right-img" src="pics/icons/right.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <div id="upper-footer-container">
+        <img id="footer-img" src="pics/footer.svg" alt="footer image">
+        <h2 id="footer_titel">Let's Play!</h2>
+        <button class="footer_button">Plan a Visit</button>
+        <div class="footer_info">
+            <p>Stay Updated!</p>
+            <p>Sign up for our newsletter and don’t miss any news from Zoomania!</p>
+        </div>
+        <div class="newsletter_form">
+            <input type="email" id="email_input" placeholder="Your email address">
+            <p id="respond"></p>
+            <button class="newsletter_button">Sign Up</button>
+        </div>
+    </div>
+
+        <div class="scroll_to_top">
+            <a href="#top">
+                <img id="top-scroll" src="pics/icons/seitenanfang.svg" alt="Back to top">
+            </a>
+        </div>
+
+        <div id="logo_bottom">
+            <a href="index-englisch.html">
+                <img id="logo-bottom" src="pics/logos/logo_bottom.svg" alt="">
+            </a>
+        </div>
+
+        <div id="nav-footer-container">
+        <div class="nav_footer">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Imprint</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-info-down">
+            <p>Zoomania</p>
+            <p>The Animal Children's Museum</p>
+            <p>Address: Sample St. 123, 10115 Berlin</p>
+            <p>Phone: +49 30 12345678</p>
+            <p>Email: <a href="mailto:info@zoomania.de">info@zoomania.de</a></p>
+            <p>Opening Hours:</p>
+            <p>Monday - Friday: 10:00 AM - 6:00 PM</p>
+            <p>Saturday & Sunday: 10:00 AM - 8:00 PM</p>
+        </div>
+    </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/date-en.js"></script>
+</div>
+</body>
+
+</html>

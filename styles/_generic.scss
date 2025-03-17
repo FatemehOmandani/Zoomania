@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;    
+    margin-bottom: 0.5rem; 
+}
+
+main, 
+footer {
+    max-width: 1000px;
+    margin: 0 auto; // Zentriert den Inhalt horizontal
+}
+
+main,
+section,
+article,
+#zitat_container,
+#feekback-container,
+footer,
+#nav-footer-container,
+.top_bar button,
+.language-menu ul {
+    background-color: var(--content-background-color);
+    color: var(--text-color);
+}
+
+article:not(#zitat) {
+    padding: 2rem 5rem;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid var(--border-color);
+    padding: 0.5em; 
+}
+
+th {
+    background-color: var(--table-header-background-color); 
+    text-align: left; 
+}
+
+a,
+button {
+    cursor: pointer; 
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: var(--link-hover-color); 
+    }
+}
+
+caption {
+    font-weight: bold; 
+    text-align: left; 
+}
+
+textarea {
+    line-height: 1.5;
+    width: 100%;    
+    overflow: auto;
+    white-space: pre-wrap;  
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    box-shadow: 1px 1px 1px #999;
+}
+
+small {
+    font-size: 0.8rem; 
+    color: var(--secondary-text-color);
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit; 
+    line-height: 1.7rem; 
+    // border: 1px solid var(--border-color); 
+    border-radius: 20px; 
+}
+
+.error {
+    color: rgb(180, 44, 2);
+    font-weight: bolder;
+}
+
+.success {
+    color: rgb(2, 50, 139);
+    font-weight: bolder;
+}
+
+mark {
+    background-color: rgb(141, 241, 25); 
+}

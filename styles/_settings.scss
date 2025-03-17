@@ -1,0 +1,97 @@
+
+
+:root {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+
+    --background-color: #f8f8f8; 
+    --nav-background: #01B0C4; 
+    --sec-nav-background: #A7DFE6;
+    --content-background-color: #ffffff; 
+    --text-color: #000000; 
+    --secondary-text-color: #666; 
+    --border-color: #cccccc; 
+    --hover-button-background-color: #01B0C4; 
+    --link-hover-color: #007bff; 
+    --table-header-background-color: #01B0C4; 
+    --shadow-color: #0000001a; 
+    --button-background: #FFD271;
+    --dropdown-background: #fff;
+    --dropdown-border: #ccc;
+    --dropdown-hover: #f0f0f0;
+    --nav-border-bottom: #ffffff;
+    --submenu-background: #A7DFE6;
+    --submenu-border: #ffffff;
+    --orange-color: #FE834E;
+    --green-color: #7AD280;
+    --blue-color: #253B80;
+    --pink-color: #fe57b0;
+    --red-color: #D12020;
+    --accent-color: #FE834E;
+    --scroll:#FFD271;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+    
+:root{
+    --background-color: #000000; 
+    --nav-background: #000000; 
+    --sec-nav-background: #666;
+    --content-background-color: #000000; 
+    --text-color: #ffffff; 
+    --secondary-text-color: #666; 
+    --border-color: #cccccc; 
+    --hover-button-background-color: #313131; 
+    --link-hover-color: #ddeaf8; 
+    --table-header-background-color: #666; 
+    --shadow-color: #0000001a; 
+    --button-background: #FFD271;
+    --dropdown-background: #fff;
+    --dropdown-border: #ccc;
+    --dropdown-hover: #f0f0f0;
+    --nav-border-bottom: #ffffff;
+    --submenu-background: #A7DFE6;
+    --submenu-border: #ffffff;
+    --orange-color: #FE834E;
+    --green-color: #7AD280;
+    --blue-color: #253B80;
+    --pink-color: #fe57b0;
+    --red-color: #D12020;
+    --accent-color: #666;
+            
+    
+    .language-menu{ 
+                    li{
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+    
+    .main_nav{
+        ul{
+            a:hover{
+                color: #ffffff;
+            }
+        }
+
+    }
+   
+}
+
+.nav_footer{
+   ul{
+    li{
+        a{
+            color: #ffffff;
+        }
+    }
+   }
+}
+
+
+}
+
